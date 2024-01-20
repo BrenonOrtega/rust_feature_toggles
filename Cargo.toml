@@ -1,0 +1,15 @@
+[package]
+name = "feature_toggles"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+name = "feature_toggles"
+path = "src/lib.rs"
+
+[features]
+mysql = []
+
+[dependencies]
+config = "0.13.4"
+mysql = "24.0.0"

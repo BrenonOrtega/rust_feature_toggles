@@ -1,0 +1,13 @@
+[cargo]
+# Specify additional arguments for the `cargo check` command
+check = ["--all-features"]
+
+[build]
+# Specify additional build scripts or commands to run before analysis
+before-build = ["cargo build"]
+
+[inlayHints]
+# Enable or disable inlay hints in the editor
+chainingHints = true
+parameterHints = true
+typeHints = true
